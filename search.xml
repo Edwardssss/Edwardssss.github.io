@@ -395,11 +395,11 @@
     
     
     <entry>
-      <title>页游</title>
-      <link href="/game/index.html"/>
-      <url>/game/index.html</url>
+      <title>个人简介</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<script src="/CatchThatCat-master/phaser.min.js"></script><script src="/CatchThatCat-master/catch-the-cat.js"></script><div id="catch-the-cat"></div><script>    window.game = new CatchTheCatGame({        w: 10,        h: 10,        r: 30,        backgroundColor: 0xeeeeee,        parent: 'catch-the-cat',        statusBarAlign: 'center',        credit: '圈小猫'    });</script><div align="center">    <br>    <h2>如果小猫跑出边界就输掉了，堵住淘气的小猫咪！</h2><br>    由于网页渲染的效果，实际的点击位置和检测到的点击位置会有些许偏差<br>    手机端无影响，PC端可以通过稍微减小浏览器页面的宽度来减少误差</div>]]></content>
+        <content type="html"><![CDATA[<div align="center">    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=40&pause=1000&center=true&vCenter=true&width=870&height=100&lines=%3C+%F0%9F%91%8B%F0%9F%8F%BBHello!+I+am+Edwardssss+%3E" alt="Hello~" /></a></div><h2 id="简要介绍"><a class="header-anchor" href="#简要介绍"> </a>简要介绍</h2><ul><li><p>电赛嵌入式软件人(指硬件啥也不会，画板子一团糟)😭</p></li><li><p>最近对于DQN和嵌入式Soc比较感兴趣😉</p></li><li><p>目前还是蒟蒻，正在努力填坑🤗</p></li><li><p>喜欢玩战地5和听音乐(强推<a href="https://music.163.com/#/artist?id=12390232">ヨルシカ</a>的歌)😍</p></li><li><p>对于单片机编程比较熟悉，会使用C, MATLAB, Python, Verilog以及8086汇编</p></li><li><p>能够编写简单的爬虫，使用pygame编写游戏，用pyqt设计Windows桌面应用程序</p></li><li><p>有简单的数学建模经验(指单干一篇数模论文作业)</p></li><li><p>会使用MATLAB app designer设计程序，已开源<a href="https://github.com/Edwardssss/FFT_MATLAB">FFT_MATLAB</a>应用（用于FFT运算仿真分析）</p></li><li><p>会使用Solidworks进行3D建模和使用会声会影进行简单的视频剪辑（不敢碰瓷Pr✌）</p></li></ul><h2 id="愿望清单"><a class="header-anchor" href="#愿望清单"> </a>愿望清单</h2><p>有一个全栈的梦，希望能按照自己兴趣慢慢来做清单当中的一些事情<br>与诸君共勉😘</p><ul><li><input type="checkbox" id="checkbox0"><label for="checkbox0"> 学习DQN</label></li><li><input type="checkbox" id="checkbox1"><label for="checkbox1"> 学习processing语言</label></li><li><input type="checkbox" id="checkbox2"><label for="checkbox2"> 学习Nonebot2，写一个插件，并且部署到我的云服务器上</label></li><li><input type="checkbox" id="checkbox3"><label for="checkbox3"> 考雅思(🐭🐭我有点想润了捏)</label></li><li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4"> 学习基本的汇编语言</label></li><li><input type="checkbox" id="checkbox5" checked="true"><label for="checkbox5"> 学习MATLAB</label></li><li><input type="checkbox" id="checkbox6" checked="true"><label for="checkbox6"> 学习LaTex排版</label></li><li><input type="checkbox" id="checkbox7"><label for="checkbox7"> 学习Scrapy爬虫</label></li><li><input type="checkbox" id="checkbox8"><label for="checkbox8"> 学习绘制GraphPad Prism</label></li></ul><hr><h2 id="博客补完计划"><a class="header-anchor" href="#博客补完计划"> </a>博客补完计划</h2><p>之前的很多博客（或者是想写但是一直没有写的博客）打算都整到自己的博客站上面来</p><p>博客站截至目前已经建设的基本完善了，后面就是专注写作了</p><p>下面有个清单，记载我博客补完计划的进度</p><ul><li><p><input type="checkbox" id="checkbox9"><label for="checkbox9"> STM32的踩坑记录</label></p></li><li><p><input type="checkbox" id="checkbox10"><label for="checkbox10"> STM32的HAL库教程</label></p></li><li><p><input type="checkbox" id="checkbox11"><label for="checkbox11"> Pytorch入门教程</label></p></li><li><p><input type="checkbox" id="checkbox12" checked="true"><label for="checkbox12"> DQN教程</label></p></li><li><p><input type="checkbox" id="checkbox13"><label for="checkbox13"> MATLAB教程</label></p></li><li><p><input type="checkbox" id="checkbox14"><label for="checkbox14"> 其他笔记</label></p></li></ul><p>写作是输出，学习是输入，打通这个循环，我认为就可以得到不断的进步，加油！</p>]]></content>
       
     </entry>
     
@@ -417,11 +417,11 @@
     
     
     <entry>
-      <title>个人简介</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[<div align="center">    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=40&pause=1000&center=true&vCenter=true&width=870&height=100&lines=%3C+%F0%9F%91%8B%F0%9F%8F%BBHello!+I+am+Edwardssss+%3E" alt="Hello~" /></a></div><h2 id="简要介绍"><a class="header-anchor" href="#简要介绍"> </a>简要介绍</h2><ul><li><p>电赛嵌入式软件人(指硬件啥也不会，画板子一团糟)😭</p></li><li><p>最近对于DQN和嵌入式Soc比较感兴趣😉</p></li><li><p>目前还是蒟蒻，正在努力填坑🤗</p></li><li><p>喜欢玩战地5和听音乐(强推<a href="https://music.163.com/#/artist?id=12390232">ヨルシカ</a>的歌)😍</p></li><li><p>对于单片机编程比较熟悉，会使用C, MATLAB, Python, Verilog以及8086汇编</p></li><li><p>能够编写简单的爬虫，使用pygame编写游戏，用pyqt设计Windows桌面应用程序</p></li><li><p>有简单的数学建模经验(指单干一篇数模论文作业)</p></li><li><p>会使用MATLAB app designer设计程序，已开源<a href="https://github.com/Edwardssss/FFT_MATLAB">FFT_MATLAB</a>应用（用于FFT运算仿真分析）</p></li><li><p>会使用Solidworks进行3D建模和使用会声会影进行简单的视频剪辑（不敢碰瓷Pr✌）</p></li></ul><h2 id="愿望清单"><a class="header-anchor" href="#愿望清单"> </a>愿望清单</h2><p>有一个全栈的梦，希望能按照自己兴趣慢慢来做清单当中的一些事情<br>与诸君共勉😘</p><ul><li><input type="checkbox" id="checkbox0"><label for="checkbox0"> 学习DQN</label></li><li><input type="checkbox" id="checkbox1"><label for="checkbox1"> 学习processing语言</label></li><li><input type="checkbox" id="checkbox2"><label for="checkbox2"> 学习Nonebot2，写一个插件，并且部署到我的云服务器上</label></li><li><input type="checkbox" id="checkbox3"><label for="checkbox3"> 考雅思(🐭🐭我有点想润了捏)</label></li><li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4"> 学习基本的汇编语言</label></li><li><input type="checkbox" id="checkbox5" checked="true"><label for="checkbox5"> 学习MATLAB</label></li><li><input type="checkbox" id="checkbox6" checked="true"><label for="checkbox6"> 学习LaTex排版</label></li><li><input type="checkbox" id="checkbox7"><label for="checkbox7"> 学习Scrapy爬虫</label></li><li><input type="checkbox" id="checkbox8"><label for="checkbox8"> 学习绘制GraphPad Prism</label></li></ul><hr><h2 id="博客补完计划"><a class="header-anchor" href="#博客补完计划"> </a>博客补完计划</h2><p>之前的很多博客（或者是想写但是一直没有写的博客）打算都整到自己的博客站上面来</p><p>博客站截至目前已经建设的基本完善了，后面就是专注写作了</p><p>下面有个清单，记载我博客补完计划的进度</p><ul><li><p><input type="checkbox" id="checkbox9"><label for="checkbox9"> STM32的踩坑记录</label></p></li><li><p><input type="checkbox" id="checkbox10"><label for="checkbox10"> STM32的HAL库教程</label></p></li><li><p><input type="checkbox" id="checkbox11"><label for="checkbox11"> Pytorch入门教程</label></p></li><li><p><input type="checkbox" id="checkbox12" checked="true"><label for="checkbox12"> DQN教程</label></p></li><li><p><input type="checkbox" id="checkbox13"><label for="checkbox13"> MATLAB教程</label></p></li><li><p><input type="checkbox" id="checkbox14"><label for="checkbox14"> 其他笔记</label></p></li></ul><p>写作是输出，学习是输入，打通这个循环，我认为就可以得到不断的进步，加油！</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -439,22 +439,22 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>页游</title>
+      <link href="/game/index.html"/>
+      <url>/game/index.html</url>
       
-        <content type="html"><![CDATA[<div align="center"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=8104747432&auto=0&height=430"></iframe></div><div align="center">    <p>好听的歌当然要分享出来鸭~</p></div>]]></content>
+        <content type="html"><![CDATA[<script src="/CatchThatCat-master/phaser.min.js"></script><script src="/CatchThatCat-master/catch-the-cat.js"></script><div id="catch-the-cat"></div><script>    window.game = new CatchTheCatGame({        w: 10,        h: 10,        r: 30,        backgroundColor: 0xeeeeee,        parent: 'catch-the-cat',        statusBarAlign: 'center',        credit: '圈小猫'    });</script><div align="center">    <br>    <h2>如果小猫跑出边界就输掉了，堵住淘气的小猫咪！</h2><br>    由于网页渲染的效果，实际的点击位置和检测到的点击位置会有些许偏差<br>    手机端无影响，PC端可以通过稍微减小浏览器页面的宽度来减少误差</div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div align="center"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=8104747432&auto=0&height=430"></iframe></div><div align="center">    <p>好听的歌当然要分享出来鸭~</p></div>]]></content>
       
     </entry>
     
