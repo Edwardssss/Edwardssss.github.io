@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Scrapy爬虫 | 砕月之殇的摆烂小窝</title><meta name="author" content="砕月之殇"><meta name="copyright" content="砕月之殇"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Scrapy环境搭建  Scrapy模块安装 首先，我们需要先搭建好Scrapy的环境 利用conda创建一个名为Scrapy_work的虚拟环境并且进入该环境 12conda create -n &quot;Scrapy_work&quot;conda activate Scrapy_work 然后使用pip安装Scrapy模块 1pip install Scrapy 为了确认Scrapy模块">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Scrapy爬虫 | 砕月之殇的摆烂小窝</title><meta name="author" content="砕月之殇"><meta name="copyright" content="砕月之殇"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Scrapy初步认识  Scrapy模块安装 首先，我们需要先搭建好Scrapy的环境 利用conda创建一个名为Scrapy_work的虚拟环境并且进入该环境 12conda create -n &quot;Scrapy_work&quot;conda activate Scrapy_work 然后使用pip安装Scrapy模块 1pip install Scrapy 为了确认Scrapy模块">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Scrapy爬虫">
 <meta property="og:url" content="https://edwardssss.github.io/posts/21153/index.html">
 <meta property="og:site_name" content="砕月之殇的摆烂小窝">
-<meta property="og:description" content="Scrapy环境搭建  Scrapy模块安装 首先，我们需要先搭建好Scrapy的环境 利用conda创建一个名为Scrapy_work的虚拟环境并且进入该环境 12conda create -n &quot;Scrapy_work&quot;conda activate Scrapy_work 然后使用pip安装Scrapy模块 1pip install Scrapy 为了确认Scrapy模块">
+<meta property="og:description" content="Scrapy初步认识  Scrapy模块安装 首先，我们需要先搭建好Scrapy的环境 利用conda创建一个名为Scrapy_work的虚拟环境并且进入该环境 12conda create -n &quot;Scrapy_work&quot;conda activate Scrapy_work 然后使用pip安装Scrapy模块 1pip install Scrapy 为了确认Scrapy模块">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://edwardssss.github.io/user/show_myself.png">
 <meta property="article:published_time" content="2024-02-04T11:52:47.000Z">
-<meta property="article:modified_time" content="2024-02-04T13:42:26.172Z">
+<meta property="article:modified_time" content="2024-02-06T14:21:47.004Z">
 <meta property="article:author" content="砕月之殇">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="爬虫">
@@ -65,7 +65,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-02-04 21:42:26'
+  postUpdate: '2024-02-06 22:21:47'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -164,7 +164,7 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/c/font_3870982_w1axi7vkykm.css"><link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="砕月之殇的摆烂小窝" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/user/show_myself.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yu"></i><span> 摸鱼</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/game/"><i class="fa-fw fas fa-gamepad"></i><span> 页游</span></a></li><li><a class="site-page child" href="/ghs/"><i class="fa-fw fa fa-user-lock"></i><span> GHS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-ren111"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/user/top_img.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="砕月之殇的摆烂小窝"></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yu"></i><span> 摸鱼</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/game/"><i class="fa-fw fas fa-gamepad"></i><span> 页游</span></a></li><li><a class="site-page child" href="/ghs/"><i class="fa-fw fa fa-user-lock"></i><span> GHS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-ren111"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Scrapy爬虫</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-04T11:52:47.000Z" title="发表于 2024-02-04 19:52:47">2024-02-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-04T13:42:26.172Z" title="更新于 2024-02-04 21:42:26">2024-02-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python%E7%88%AC%E8%99%AB/">Python爬虫</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">131</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Scrapy爬虫"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/21153/#post-comment"><span class="waline-comment-count" data-path="/posts/21153/"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Scrapy环境搭建"><a class="header-anchor" href="#Scrapy环境搭建"> </a>Scrapy环境搭建</h2>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/user/show_myself.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yu"></i><span> 摸鱼</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/game/"><i class="fa-fw fas fa-gamepad"></i><span> 页游</span></a></li><li><a class="site-page child" href="/ghs/"><i class="fa-fw fa fa-user-lock"></i><span> GHS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-ren111"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/user/top_img.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="砕月之殇的摆烂小窝"></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yu"></i><span> 摸鱼</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></li><li><a class="site-page child" href="/game/"><i class="fa-fw fas fa-gamepad"></i><span> 页游</span></a></li><li><a class="site-page child" href="/ghs/"><i class="fa-fw fa fa-user-lock"></i><span> GHS</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-ren111"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Scrapy爬虫</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-04T11:52:47.000Z" title="发表于 2024-02-04 19:52:47">2024-02-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-06T14:21:47.004Z" title="更新于 2024-02-06 22:21:47">2024-02-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python%E7%88%AC%E8%99%AB/">Python爬虫</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>21分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Scrapy爬虫"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/21153/#post-comment"><span class="waline-comment-count" data-path="/posts/21153/"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Scrapy初步认识"><a class="header-anchor" href="#Scrapy初步认识"> </a>Scrapy初步认识</h2>
 <h3 id="Scrapy模块安装"><a class="header-anchor" href="#Scrapy模块安装"> </a>Scrapy模块安装</h3>
 <p>首先，我们需要先搭建好Scrapy的环境</p>
 <p>利用conda创建一个名为<code>Scrapy_work</code>的虚拟环境并且进入该环境</p>
@@ -176,7 +176,717 @@
 <p>如果正确安装的话，终端会显示Scrapy的版本</p>
 <h3 id="编写Scrapy爬虫"><a class="header-anchor" href="#编写Scrapy爬虫"> </a>编写Scrapy爬虫</h3>
 <h4 id="Scrapy框架结构及其工作原理"><a class="header-anchor" href="#Scrapy框架结构及其工作原理"> </a>Scrapy框架结构及其工作原理</h4>
-<img src="/posts/undefined/framework.jpg" class="">
+<img src="/posts/21153/framework.jpg" class="">
+<p>上图为Scrapy框架是组成结构</p>
+<p>Scrapy框架中的各个组件的介绍如下所示</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">组件</th>
+<th style="text-align:center">描述</th>
+<th style="text-align:center">类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ENGINE</td>
+<td style="text-align:center">引擎，框架的核心，其他所有组件在其控制下协同工作</td>
+<td style="text-align:center">内部组件</td>
+</tr>
+<tr>
+<td style="text-align:center">SCHEDULER</td>
+<td style="text-align:center">调度器，负责对SPIDER提交的下载请求进行调度</td>
+<td style="text-align:center">内部组件</td>
+</tr>
+<tr>
+<td style="text-align:center">DOWNLOADER</td>
+<td style="text-align:center">下载器，负责下载页面（发送HTTP请求和接收HTTP响应）</td>
+<td style="text-align:center">内部组件</td>
+</tr>
+<tr>
+<td style="text-align:center">SPIDER</td>
+<td style="text-align:center">爬虫，负责提取页面中的数据，并产生对新页面的下载请求</td>
+<td style="text-align:center">用户实现</td>
+</tr>
+<tr>
+<td style="text-align:center">MIDDLEWARE</td>
+<td style="text-align:center">中间件，负责对Request对象和Response对象进行处理</td>
+<td style="text-align:center">可选组件</td>
+</tr>
+<tr>
+<td style="text-align:center">ITEM PIPELINE</td>
+<td style="text-align:center">数据管道，负责对爬取到的数据进行处理</td>
+<td style="text-align:center">可选组件</td>
+</tr>
+</tbody>
+</table>
+<p>对于用户来说，<code>Spider</code>是最核心的组件，爬虫的开发都是围绕<code>Spider</code>组件展开的</p>
+<p>接下来是框架中的数据流</p>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REQUEST</td>
+<td>Scrapy的HTTP请求对象</td>
+</tr>
+<tr>
+<td>RESPONSE</td>
+<td>Scrapy的HTTP响应对象</td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>从页面中爬取的一项数据</td>
+</tr>
+</tbody>
+</table>
+<p>数据的流动过程简述如下：</p>
+<ol>
+<li>当<code>SPIDER</code>要爬取某URL地址的页面时，需要使用该URL构造一个<code>Request</code>对象，提交给<code>ENGINE</code></li>
+<li><code>Request</code>对象随后进入<code>SCHEDULER</code>按某种算法进行排队，之后的某个时刻<code>SCHEDULER</code>将其出队，送往<code>DOWNLOADER</code></li>
+<li><code>DOWNLOADER</code>根据<code>Request</code>对象中的URL地址发送一次HTTP请求到网站的服务器，之后用服务器返回的HTTP响应构造出一个<code>Response</code>对象，其中包含页面的HTML文本</li>
+<li><code>Response</code>对象最终会被送到<code>SPIDER</code>的页面解析函数处进行处理，页面解析函数可以从页面中提取数据，并且封装为<code>ITEM</code>之后提交给<code>ENGINE</code>，之后被送往<code>ITEM PIPELINE</code>进行处理，最后由<code>EXPORTER</code>以某种数据格式写入文件；除此之外，页面解析函数还可以从页面中提取链接，构造出一个新的<code>Request</code>对象提交给<code>ENGINE</code></li>
+</ol>
+<h4 id="Request和Response对象"><a class="header-anchor" href="#Request和Response对象"> </a>Request和Response对象</h4>
+<h5 id="Request对象"><a class="header-anchor" href="#Request对象"> </a>Request对象</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">scrapy</span>.http.Request(url[, callback, method=<span class="string">&#x27;GET&#x27;</span>, headers, body, cookies, meta, encoding=<span class="string">&#x27;utf-8&#x27;</span>, priority=<span class="number">0</span>, dont_filter=<span class="literal">False</span>, errback, flags])</span><br></pre></td></tr></table></figure>
+<ul>
+<li>url：请求页面的url地址</li>
+<li>callback：页面解析函数，<code>Request</code>对象请求的页面在下载完成之后，由该参数指定的页面解析函数被调用，如果未传递该参数，则默认调用Spider的<code>parse</code>方法</li>
+<li>method：HTTP请求的方法，默认为<code>GET</code></li>
+<li>headers：HTTP请求的头部字典，dict类型</li>
+<li>body：HTTP请求的正文</li>
+<li>cookies：Cookies信息字典，dict类型</li>
+<li>meta：Request的元数据字典，用于给框架中其他组件传递信息</li>
+<li>encoding：url和body参数的编码默认为<code>UTF-8</code>，如果传入的参数是<code>str</code>类型，则使用该参数进行编码</li>
+<li>priority：请求的优先级默认值为0，优先级高的请求优先下载</li>
+<li>dont_filter：如果对同一个url地址多次提交下载请求，后面的请求会被屏蔽，将此参数设置为<code>True</code>可以避免请求被过滤，强制下载</li>
+<li>errback：请求出现异常或者出现HTTP错误时的回调函数</li>
+<li>flag：一个Request请求的标记，一般用于log记录</li>
+</ul>
+<h5 id="Response对象"><a class="header-anchor" href="#Response对象"> </a>Response对象</h5>
+<p>Response对象是用来描述一个HTTP响应的，<code>Response</code>只是一个基类，根据响应内容的不同有如下子类：</p>
+<ul>
+<li>TextResponse</li>
+<li>HtmlResponse</li>
+<li>XmlResponse</li>
+</ul>
+<p>当一个页面下载完成后，下载器就依据HTTP响应头部中的<code>Content-Type</code>信息创建某个Response的子类对象</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">scrapy</span>.http.Response(url[, status=<span class="number">200</span>, headers=<span class="literal">None</span>, body=<span class="string">b&#x27;&#x27;</span>, flags=<span class="literal">None</span>, request=<span class="literal">None</span>])</span><br></pre></td></tr></table></figure>
+<ul>
+<li>url：HTTP响应的url地址</li>
+<li>status：HTTP响应的状态码</li>
+<li>headers：HTTP响应的头部，类字典类型，可以用<code>get</code>或<code>getlist</code>方法进行访问，例如：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.headers.get(<span class="string">&#x27;Content-Type&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>body：HTTP响应正文</li>
+<li>text：文本形式的HTTP响应正文</li>
+<li>encoding：HTTP响应正文的编码</li>
+<li>request：产生该HTTP响应的<code>Request</code>对象</li>
+<li>meta：即<code>response.request.meta</code></li>
+<li>selector：用于在<code>Response</code>中提取数据</li>
+<li>xpath：使用XPath选择器在<code>Response</code>中提取数据</li>
+<li>css：使用CSS选择器在<code>Response</code>中提取数据</li>
+<li>urljoin：用于构造绝对url</li>
+</ul>
+<h4 id="Spider开发流程"><a class="header-anchor" href="#Spider开发流程"> </a>Spider开发流程</h4>
+<p>一般而言，实现一个Spider只需要以下几个步骤：</p>
+<ol>
+<li>继承<code>scrapy.Spider</code></li>
+<li>为<code>Spider</code>取名</li>
+<li>设置起始的爬取点</li>
+<li>实现页面解析函数</li>
+</ol>
+<h2 id="使用Selector提取数据"><a class="header-anchor" href="#使用Selector提取数据"> </a>使用Selector提取数据</h2>
+<p>我们要从页面中提取数据需要进行HTTP文本解析，一般用以下模块进行处理：</p>
+<ul>
+<li>BeautifulSoup</li>
+<li>lxml</li>
+</ul>
+<p>Scrapy综合以上两者的优点实现了<code>Selector</code>类</p>
+<p>在Scrapy中使用Selector对象提取页面中的数据，使用前先通过选择器选中页面中需要提取的数据，然后进行提取</p>
+<h3 id="Selector对象"><a class="header-anchor" href="#Selector对象"> </a>Selector对象</h3>
+<p>Selector类的实现位于<code>scrapy.selector</code>模块</p>
+<h4 id="创建对象"><a class="header-anchor" href="#创建对象"> </a>创建对象</h4>
+<p>我们可以将页面的HTML文档字符串传递给<code>Selector</code>构造器方法的<code>text</code>参数</p>
+<p>也可以使用一个<code>Response</code>对象构造<code>Selector</code>对象，将其传递给<code>Selector</code>构造器方法的<code>response</code>参数</p>
+<h4 id="选中数据"><a class="header-anchor" href="#选中数据"> </a>选中数据</h4>
+<p>调用<code>Selector</code>对象的XPath方法或CSS方法，可以选中文档中的某个或某些部分</p>
+<p>XPath方法和CSS方法返回一个<code>SelectorList</code>对象，其中包含每个被选中部分对应的<code>Selector</code>对象</p>
+<p><code>SelectorList</code>对象也有XPath和CSS方法，但是不同的是这里的方法是调用<code>SelectorList</code>对象当中的每一个<code>Selector</code>对象的XPath和CSS方法，并将结果收集到一个新的<code>SelectorList</code>对象当中，然后返回给用户</p>
+<h4 id="提取数据"><a class="header-anchor" href="#提取数据"> </a>提取数据</h4>
+<p>调用<code>Selector</code>或<code>SelectorList</code>对象的以下方法可以将选中的内容提取出来</p>
+<ul>
+<li><code>extract()</code></li>
+<li><code>re()</code></li>
+<li><code>extract_first()</code>（<code>SelectorList</code>对象专有，提取第一个<code>Selector</code>对象的数据）</li>
+<li><code>re_first()</code>（<code>SelectorList</code>对象专有，对第一个<code>Selector</code>对象进行正则匹配）</li>
+</ul>
+<h3 id="Response内置Selector"><a class="header-anchor" href="#Response内置Selector"> </a>Response内置Selector</h3>
+<p>在我们实际的开发中，一般不需要手动创建<code>Selector</code>对象</p>
+<p>因为在第一次访问一个<code>Response</code>对象的<code>selector</code>属性时，<code>Response</code>对象内部会以自身为参数自动创建<code>Selector</code>对象，并将该对象缓存，以便下次使用</p>
+<p>为了方便，<code>Response</code>对象还内置了XPath和CSS方法，它们会在内部调用内置<code>Selector</code>对象的XPath和CSS方法</p>
+<h3 id="Xpath"><a class="header-anchor" href="#Xpath"> </a>Xpath</h3>
+<p>Xpath即XML路径语言，它是一种用来确定XML文档中某部分位置的语言</p>
+<p>XML文档的节点有多种类型，其中最常用的有以下几种：</p>
+<ul>
+<li>根节点（整个文档树的根）</li>
+<li>元素节点（html，body，div，p，a）</li>
+<li>属性节点（href）</li>
+<li>文本节点（正文）</li>
+</ul>
+<p>节点之间的关系有以下几种：</p>
+<ul>
+<li>父子</li>
+<li>兄弟</li>
+<li>祖先/后裔</li>
+</ul>
+<h4 id="基础语法"><a class="header-anchor" href="#基础语法"> </a>基础语法</h4>
+<p>下表列出了XPath常用的基本语法</p>
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td>
+<td>选中文档的根</td>
+</tr>
+<tr>
+<td>.</td>
+<td>选中当前节点</td>
+</tr>
+<tr>
+<td>…</td>
+<td>选中当前节点的父节点</td>
+</tr>
+<tr>
+<td>ELEMENT</td>
+<td>选中子节点中所有的ELEMENT元素节点</td>
+</tr>
+<tr>
+<td>//ELEMENT</td>
+<td>选中后代节点中所有ELEMENT元素节点</td>
+</tr>
+<tr>
+<td>*</td>
+<td>选中所有元素子节点</td>
+</tr>
+<tr>
+<td>text()</td>
+<td>选中所有文本子节点</td>
+</tr>
+<tr>
+<td>@ATTR</td>
+<td>选中名为ATTR的属性节点</td>
+</tr>
+<tr>
+<td>@*</td>
+<td>选中所有属性节点</td>
+</tr>
+<tr>
+<td>[谓语]</td>
+<td>谓语用来查找某个特定的节点或者包含某个特定值的节点</td>
+</tr>
+</tbody>
+</table>
+<h4 id="常用函数"><a class="header-anchor" href="#常用函数"> </a>常用函数</h4>
+<p>XPath还提供许多函数，如数字，字符串，时间，日期，统计等等，例如：</p>
+<ul>
+<li>position() 选中指定位置</li>
+<li>last() 选中最后一个</li>
+<li>string() 返回参数的字符串值</li>
+<li>contains(str1,str2) 判断str1中是否包含str2，返回bool值</li>
+</ul>
+<h3 id="CSS选择器"><a class="header-anchor" href="#CSS选择器"> </a>CSS选择器</h3>
+<h4 id="基础语法-v2"><a class="header-anchor" href="#基础语法-v2"> </a>基础语法</h4>
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>描述</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>选中所有元素</td>
+<td>*</td>
+</tr>
+<tr>
+<td>E</td>
+<td>选中E元素</td>
+<td>p</td>
+</tr>
+<tr>
+<td>E1,E2</td>
+<td>选中E1和E2元素</td>
+<td>div,pre</td>
+</tr>
+<tr>
+<td>E1 E2</td>
+<td>选中E1后代元素中的E2元素</td>
+<td>div p</td>
+</tr>
+<tr>
+<td>E1&gt;E2</td>
+<td>选中E1子元素中的E2元素</td>
+<td>div&gt;p</td>
+</tr>
+<tr>
+<td>E1+E2</td>
+<td>选中E1兄弟元素中的E2元素</td>
+<td>p+strong</td>
+</tr>
+<tr>
+<td>.CLASS</td>
+<td>选中CLASS属性包含CLASS的元素</td>
+<td>.info</td>
+</tr>
+<tr>
+<td>#ID</td>
+<td>选中id属性为ID的元素</td>
+<td>#main</td>
+</tr>
+<tr>
+<td>[ATTR]</td>
+<td>选中包含ATTR属性的元素</td>
+<td>[href]</td>
+</tr>
+<tr>
+<td>[ATTR=VALUE]</td>
+<td>选中包含ATTR属性且值为VALUE的元素</td>
+<td>[method=post]</td>
+</tr>
+<tr>
+<td>[ATTR~=VALUE]</td>
+<td>选中包含ATTR属性且值包含VALUE的元素</td>
+<td>[class~=clearfix]</td>
+</tr>
+<tr>
+<td>E:nth-child(n)<br />E:nth-last-child(n)</td>
+<td>选中E元素，且该元素必须是其父元素的（倒数）第n个子元素</td>
+<td>a:nth-child(1)</td>
+</tr>
+<tr>
+<td>E:first-child<br />E:last-child</td>
+<td>选中E元素，且该元素必须是其父元素的（倒数）第一个子元素</td>
+<td>a:first-child</td>
+</tr>
+<tr>
+<td>E:empty</td>
+<td>选中没有子元素的E元素</td>
+<td>div:empty</td>
+</tr>
+<tr>
+<td>E::text</td>
+<td>选中E元素的文本节点</td>
+<td>p::text</td>
+</tr>
+</tbody>
+</table>
+<h2 id="使用Item封装数据"><a class="header-anchor" href="#使用Item封装数据"> </a>使用Item封装数据</h2>
+<p>我们在存储数据的时候，经常会使用字典进行存储，但是字典会有以下的缺点：</p>
+<ol>
+<li>无法一目了然地了解数据当中的字段，影响代码可读性</li>
+<li>缺乏对字段名字的检测，容易因为笔误而出错</li>
+<li>不便于携带元数据（传递给其他组件的信息）</li>
+</ol>
+<h3 id="Item和Field"><a class="header-anchor" href="#Item和Field"> </a>Item和Field</h3>
+<p>Scrapy定义了两个类，用户可以用它们自定义数据类，封装爬取到的信息：</p>
+<ul>
+<li><code>Item</code>基类：自定义数据类的基类</li>
+<li><code>Field</code>类：用来描述自定义数据类型包含哪些字段（如name，price等）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scrapy <span class="keyword">import</span> Item,Field</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">BookItem</span>(<span class="title class_ inherited__">Item</span>):</span><br><span class="line">    name = Field()</span><br><span class="line">    price = Field()</span><br><span class="line"></span><br><span class="line">book1 = BookItem(name=<span class="string">&#x27;Needful Things&#x27;</span>,price=<span class="number">45.0</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="拓展Item子类"><a class="header-anchor" href="#拓展Item子类"> </a>拓展Item子类</h3>
+<p>有时候如果需要对已经自定义的数据类进行拓展的话，可以直接继承之前的类，然后在定义中加入新的<code>Field</code></p>
+<h2 id="使用Item-Pipeline处理数据"><a class="header-anchor" href="#使用Item-Pipeline处理数据"> </a>使用Item Pipeline处理数据</h2>
+<p><code>Item Pipeline</code>是负责处理数据的组件，在一个项目中可以同时启用多个<code>Item Pipeline</code>，按照指定次序级联起来，形成一条数据流水线</p>
+<p>以下是几种典型应用：</p>
+<ul>
+<li>清洗数据</li>
+<li>验证数据的有效性</li>
+<li>过滤掉重复的数据</li>
+<li>将数据存入数据库</li>
+</ul>
+<h3 id="Item-Pipeline"><a class="header-anchor" href="#Item-Pipeline"> </a>Item Pipeline</h3>
+<p>在创建一个Scrapy项目时，会自动生成一个<code>pipelines.py</code>文件，它用来存放用户自定义的<code>Item Pipeline</code></p>
+<p><code>Item Pipeline</code>不需要继承特定的基类，只需要实现特定的方法即可</p>
+<p>一个<code>Item Pipeline</code>必须实现一个<code>process_item(item,spider)</code>方法</p>
+<p>其中<code>item</code>是爬取到的一项数据，<code>Spider</code>是爬取到此数据的<code>Spider</code>对象</p>
+<blockquote>
+<p>如果<code>process_item(item,spider)</code>在处理某项item时返回了一项数据，返回的数据会递送给下一级<code>Item Pipeline</code>继续处理</p>
+<p>如果<code>process_item(item,spider)</code>在处理某项item时抛出了一个<code>DropItem</code>异常，则该项item会被抛弃，不再递送给后面的<code>Item Pipeline</code>进行处理</p>
+</blockquote>
+<p>除了必须实现的<code>process_item(item,spider)</code>之外，还有3个比较常用的方法：</p>
+<ul>
+<li><code>open_spider(self,spider)</code> 在Spider打开时回调该方法，常用于初始化，如连接数据库</li>
+<li><code>close_spider(self,spider)</code> 在Spider关闭时回调该方法，常用于处理完所有数据之后的清理工作，如关闭数据库</li>
+<li><code>from_crawler(cls,crawler)</code> 创建<code>Item Pipeline</code>时回调该方法，通常通过<code>crawler.settings</code>读取配置，根据配置创建<code>Item Pipeline</code>对象</li>
+</ul>
+<p>在Scrapy中，<code>Item Pipeline</code>是可选的组件，想要启用的时候需要在<code>settings.py</code>中进行配置</p>
+<h2 id="使用LinkExtractor提取链接"><a class="header-anchor" href="#使用LinkExtractor提取链接"> </a>使用LinkExtractor提取链接</h2>
+<p>一般而言，提取链接有两种方法：</p>
+<ul>
+<li>使用Selector</li>
+<li>使用LinkExtractor</li>
+</ul>
+<p>当需要提取大量链接或提取的规则比较复杂时，使用LinkExtractor更加方便</p>
+<h3 id="使用LinkExtractor"><a class="header-anchor" href="#使用LinkExtractor"> </a>使用LinkExtractor</h3>
+<p>一般使用<code>LinkExtractor</code>模块的流程如下：</p>
+<ol>
+<li>导入<code>LinkExtractor</code>模块</li>
+<li>创建一个<code>LinkExtractor</code>对象，使用一个或多个构造器参数描述提取规则</li>
+<li>调用<code>LinkExtractor</code>对象的<code>extract_links</code>方法，并传入一个<code>Response</code>对象，该方法会依据创建对象时的提取规则去从<code>Response</code>对象包含的页面中提取链接，并返回一个由绝对url构成的列表，可以用其直接构造<code>Request</code>对象</li>
+</ol>
+<h3 id="描述提取规则"><a class="header-anchor" href="#描述提取规则"> </a>描述提取规则</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">classscrapy.linkextractors.lxmlhtml.LxmlLinkExtractor(allow=(), deny=(), allow_domains=(), deny_domains=(), deny_extensions=<span class="literal">None</span>, restrict_xpaths=(), restrict_css=(), tags=(<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;area&#x27;</span>), attrs=(<span class="string">&#x27;href&#x27;</span>, ), canonicalize=<span class="literal">False</span>, unique=<span class="literal">True</span>, process_value=<span class="literal">None</span>, strip=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在Scrapy早期的版本中也有其他的<code>LinkExtractor</code>类，但是现在它们被弃用了</p>
+</blockquote>
+<ul>
+<li><code>allow</code> 接收一个正则表达式或者正则表达式列表，用于提取绝对url，如果该参数为空则提取全部链接</li>
+<li><code>deny</code> 接收一个正则表达式或者正则表达式列表，用于排除匹配的url</li>
+<li><code>allow_domains</code> 接收一个域名或者域名列表，提取到指定域的链接</li>
+<li><code>deny_domains</code> 接收一个域名或者域名列表，排除到指定域的链接</li>
+<li><code>deny_extensions</code> 在接收时需要忽略的扩展名</li>
+<li><code>restrict_xpaths</code> 接收一个XPath表达式或表达式列表，提取XPath表达式选中区域下的链接</li>
+<li><code>restrict_css</code> 接收一个CSS选择器或选择器列表，提取CSS选择器选中区域下的链接</li>
+<li><code>tag</code> 接收一个标签或标签列表，提取指定标签内的链接</li>
+<li><code>attrs</code> 接收一个属性或一个属性列表，提取指定属性内的链接</li>
+<li><code>canonicalize</code> 对提取的url进行规范化处理，常设置为<code>False</code></li>
+<li><code>unique</code> 是否应对提取的链接进行重复过滤</li>
+<li><code>process_value</code> 接收一个形如<code>func(value)</code>的回调函数，<code>LinkExtractor</code>将会调用该回调函数对提取的每一个链接进行处理</li>
+<li><code>strip</code> 是否从提取的属性中去除空格，因为<code>LinkExtractor</code>会自动去除空格</li>
+</ul>
+<h2 id="使用Exporter导出数据"><a class="header-anchor" href="#使用Exporter导出数据"> </a>使用Exporter导出数据</h2>
+<p>在Scrapy中，负责导出数据的组件被称为<code>Exporter</code></p>
+<p>Scrapy实现了多个<code>Exporter</code>，每个<code>Exporter</code>支持一种数据格式的导出，支持的数据格式如下所示：</p>
+<ul>
+<li>JSON</li>
+<li>JSON lines</li>
+<li>CSV</li>
+<li>XML</li>
+<li>Pickle</li>
+<li>Marshal</li>
+</ul>
+<p>如果需要导出为其他数据，则需要自己实现<code>Exporter</code></p>
+<h3 id="指定导出数据"><a class="header-anchor" href="#指定导出数据"> </a>指定导出数据</h3>
+<p>在导出数据时，需要向爬虫提供以下信息：</p>
+<ul>
+<li>导出文件的路径</li>
+<li>导出的数据格式</li>
+</ul>
+<p>在配置文件中，经常用到以下几个选项：</p>
+<ul>
+<li><code>FEED_URL</code> 导出文件的路径</li>
+<li><code>FEED_FORMAT</code> 导出的数据格式</li>
+<li><code>FEED_EXPORT_ENCODING</code> 导出文件编码</li>
+</ul>
+<blockquote>
+<p>默认情况下JSON文件使用数字编码，其他使用UTF-8编码</p>
+</blockquote>
+<ul>
+<li><code>FEED_EXPORT_FIELDS</code> 导出数据包含的字段（默认导出所有字段），并指定次序</li>
+<li><code>FEED_EXPORTERS</code> 用户定义新的Exporter字典，添加新的导出数据格式的时候使用</li>
+</ul>
+<blockquote>
+<p>用户自定义的导出数据格式的代码编写此处不赘述，略</p>
+</blockquote>
+<h2 id="下载文件和图片"><a class="header-anchor" href="#下载文件和图片"> </a>下载文件和图片</h2>
+<p>下载文件也是爬虫很常用的一种需求，例如图片，视频，文档，压缩包等等</p>
+<p>Scrapy框架内置了两个<code>Item Pipeline</code>专门用于下载文件和图片</p>
+<ul>
+<li><code>FilesPipeline</code></li>
+<li><code>ImagesPipeline</code></li>
+</ul>
+<h3 id="FilesPipeline的使用"><a class="header-anchor" href="#FilesPipeline的使用"> </a>FilesPipeline的使用</h3>
+<p>FilesPipeline的使用步骤一般如下所示：</p>
+<ol>
+<li>在配置文件<code>settings.py</code>中启用<code>FilesPipeline</code>，通常是将其置于其他的<code>Item Pipeline</code>之前</li>
+<li>在配置<code>settings.py</code>时，使用<code>FILES_STORE</code>指定文件的下载目录</li>
+<li>在Spider解析一个包含文件下载链接的页面时，将所有需要下载文件的url地址收集到一个列表中，然后赋值给<code>item</code>的<code>file_urls</code>字段（item[‘file_urls’]）<br>
+FilesPipeline在处理每一项item时都会进行读取，然后对其中的每一个url进行下载</li>
+</ol>
+<p>当FilesPipeline下载完所有的文件后，就会将下载的结果信息存储到另一个列表中去，下载的结果包含以下内容：</p>
+<ul>
+<li>文件下载到本地的路径</li>
+<li>Checksum文件的校验和</li>
+<li>url文件的url地址</li>
+</ul>
+<h3 id="ImagesPipeline的使用"><a class="header-anchor" href="#ImagesPipeline的使用"> </a>ImagesPipeline的使用</h3>
+<p>图片的本质也是文佳，ImagesPipeline是FilesPipeline的子类，使用上大同小异，只是配置的选项上有细微的差别</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>FilesPipeline</th>
+<th>ImagesPipeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>导入路径</td>
+<td>scrapy.pipelines.files.FilesPipeline</td>
+<td>scrapy.pipelines.images.ImagesPipeline</td>
+</tr>
+<tr>
+<td>Item字段</td>
+<td>file_urls,files</td>
+<td>image_urls,images</td>
+</tr>
+<tr>
+<td>下载目录</td>
+<td>FILES_STORE</td>
+<td>IMAGES_STORE</td>
+</tr>
+</tbody>
+</table>
+<p>ImagesPipeline在FilesPipeline的基础上针对图片增加了一些特有的功能</p>
+<ul>
+<li>为下载的图片生成缩略图</li>
+</ul>
+<p>要开启此功能，只需要在配置文件<code>settings.py</code>中设置<code>IMAGES_THUMBS</code>，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">IMAGES_THUMBS = &#123;</span><br><span class="line">    <span class="string">&#x27;small&#x27;</span>:(<span class="number">50</span>,<span class="number">50</span>),</span><br><span class="line">    <span class="string">&#x27;big&#x27;</span>:(<span class="number">270</span>,<span class="number">270</span>),</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>过滤掉尺寸较小的图片</li>
+</ul>
+<p>开启该功能需要在配置文件<code>settings.py</code>中设置<code>IMAGES_MIN_WIDTH</code>和<code>IMAGES_MIN_HEIGHT</code>，它们分别指定最小尺寸的图片的宽和高，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">IMAGES_MIN_WIDTH = <span class="number">110</span></span><br><span class="line">IMAGES_MIN_HEIGHT = <span class="number">110</span></span><br></pre></td></tr></table></figure>
+<h2 id="模拟登录"><a class="header-anchor" href="#模拟登录"> </a>模拟登录</h2>
+<p>目前，大部分网站都需要登录才能获取资源，所以有时候爬虫需要先模仿用户登录，再去爬取内容</p>
+<p>登录的实质就是向服务器发送含有登录表单数据的HTTP请求（通常是POST），Scrapy提供了一个<code>FormRequest</code>类，专门用于构造含有表单数据的请求</p>
+<h3 id="Scrapy的登录模块"><a class="header-anchor" href="#Scrapy的登录模块"> </a>Scrapy的登录模块</h3>
+<p><code>FormRequest</code>的构造器方法有一个<code>formdata</code>参数，接收字典形式的表单数据</p>
+<p>我们还可以直接调用<code>FormRequest</code>的<code>from_response</code>方法，调用时需要传入一个<code>Response</code>对象作为一个参数，该方法会解析<code>Response</code>对象中所包含页面中的<code>&lt;form&gt;</code>元素，帮助用户创建<code>FormRequest</code>对象，并自动填入表单数据，我们只需要通过<code>formdata</code>参数将账号和密码填入即可</p>
+<h3 id="识别验证码"><a class="header-anchor" href="#识别验证码"> </a>识别验证码</h3>
+<p>目前很多网站为了防止爬虫爬取，登录的时候需要用户输入验证码，一般有以下几种方法去识别验证码：</p>
+<ul>
+<li>OCR识别</li>
+</ul>
+<p>我们可以使用Python的第三方库进行识别（例如<code>tesseract-ocr</code>）</p>
+<ul>
+<li>网络平台API</li>
+</ul>
+<p>也可以去验证码识别平台购买相关服务套餐，接入API</p>
+<ul>
+<li>人工识别</li>
+</ul>
+<p>在其他方法不管用的时候，我们也可以等Scrapy下载完验证码图片后，调用<code>Image.show</code>方法来显示图片，然后再调用Python内置的<code>input</code>函数来捕获用户的输入</p>
+<h3 id="Cookie登录"><a class="header-anchor" href="#Cookie登录"> </a>Cookie登录</h3>
+<p>我们不需要去研究各个浏览器将Cookie以何种形式存储在何处，只需要调用第三方库<code>browsercookie</code>即可获得Chorme和Firefox浏览器中的Cookie</p>
+<h2 id="爬取动态页面"><a class="header-anchor" href="#爬取动态页面"> </a>爬取动态页面</h2>
+<p>我们之前讨论的都是静态页面的信息爬取，但是在实际应用中，大多数页面都是动态页面，页面中的部分内容是需要运行页面中的JavaScript脚本动态生成的，爬取相对困难</p>
+<blockquote>
+<p>实际中更常见的是JavaScript通过HTTP请求跟网页动态交互获取数据（Ajax），然后使用数据去更新HTML页面</p>
+<p>爬取此类网站需要先执行页面中的JavaScript代码去渲染页面，然后再进行爬取</p>
+</blockquote>
+<h3 id="Splash渲染引擎"><a class="header-anchor" href="#Splash渲染引擎"> </a>Splash渲染引擎</h3>
+<p>Splash是Scrapy官方推荐的JavaScript渲染引擎，提供基于HTTP端口的JavaScript渲染服务，支持以下的功能：</p>
+<ul>
+<li>为用户返回经过渲染的HTML页面或者页面截图</li>
+<li>并发渲染多个页面</li>
+<li>关闭图片加载，加速渲染</li>
+<li>在页面中执行用户自定义的JavaScript代码</li>
+<li>执行用户自定义的渲染脚本（lua）</li>
+</ul>
+<p>Splash的功能丰富，包含了多个服务端点，此处仅介绍两个最常用的端点：</p>
+<ul>
+<li>render.html 提供JavaScript页面渲染服务</li>
+<li>execute 执行用户自定义的渲染脚本（lua），利用该端点可以在页面中执行JavaScript代码</li>
+</ul>
+<h4 id="render-html端点"><a class="header-anchor" href="#render-html端点"> </a>render.html端点</h4>
+<table>
+<thead>
+<tr>
+<th>服务端点</th>
+<th>render.html</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>请求地址</td>
+<td><a target="_blank" rel="noopener" href="http://localhost:8050/render.html">http://localhost:8050/render.html</a></td>
+</tr>
+<tr>
+<td>请求方式</td>
+<td>GET / POST</td>
+</tr>
+<tr>
+<td>返回类型</td>
+<td>HTML</td>
+</tr>
+</tbody>
+</table>
+<p>render.html端点支持的参数如下表所示（仅列出常用的参数）</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否必选</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>必选</td>
+<td>string</td>
+<td>需要渲染的页面的url</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>可选</td>
+<td>float</td>
+<td>渲染页面的超时时间</td>
+</tr>
+<tr>
+<td>proxy</td>
+<td>可选</td>
+<td>string</td>
+<td>代理服务器地址</td>
+</tr>
+<tr>
+<td>wait</td>
+<td>可选</td>
+<td>float</td>
+<td>等待页面渲染的时间</td>
+</tr>
+<tr>
+<td>images</td>
+<td>可选</td>
+<td>integer</td>
+<td>是否下载图片，默认为1</td>
+</tr>
+<tr>
+<td>js_source</td>
+<td>可选</td>
+<td>string</td>
+<td>用户自定义的JavaScript代码，在页面渲染前执行</td>
+</tr>
+</tbody>
+</table>
+<h4 id="execute端点"><a class="header-anchor" href="#execute端点"> </a>execute端点</h4>
+<p>在爬取一些页面的时候，我们想在页面中执行一些用户自定义的JavaScript代码，可以通过利用Splash的execute端点来实现</p>
+<table>
+<thead>
+<tr>
+<th>服务端点</th>
+<th>execute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>请求地址</td>
+<td><a target="_blank" rel="noopener" href="http://localhost:8050/execute">http://localhost:8050/execute</a></td>
+</tr>
+<tr>
+<td>请求方式</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>返回类型</td>
+<td>HTML</td>
+</tr>
+</tbody>
+</table>
+<p>execute支持的参数如下表所示</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否必选</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lua_source</td>
+<td>必选</td>
+<td>string</td>
+<td>用户自定义的lua脚本</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>可选</td>
+<td>float</td>
+<td>渲染页面的超时时间</td>
+</tr>
+<tr>
+<td>proxy</td>
+<td>可选</td>
+<td>string</td>
+<td>代理服务器地址</td>
+</tr>
+</tbody>
+</table>
+<p>我们可以将execute端点的服务看作是一个可以用lua语言编程的浏览器，使用时需要传递一个用户自定义的lua脚本给Splash，该lua脚本中包含用户想要模拟的浏览器行为，例如：</p>
+<ul>
+<li>打开某url地址的页面</li>
+<li>等待页面加载或渲染</li>
+<li>执行JavaScript代码</li>
+<li>获取HTTP响应头部</li>
+<li>获取Cookie</li>
+</ul>
+<p>用户自定义的lua脚本中必须包含一个main函数作为程序的入口，main函数被调用的时候会传入一个Splash对象（lua中的对象），用户可以调用该对象上的方法操纵Splash</p>
+<h4 id="在Scrapy中使用Splash"><a class="header-anchor" href="#在Scrapy中使用Splash"> </a>在Scrapy中使用Splash</h4>
+<p>如果我们需要在Scrapy中调用Splash服务，Python的<code>scrapy-splash</code>库是非常好的选择</p>
+<p>我们在安装好Python包之后，需要在<code>settings.py</code>中对其进行配置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 渲染服务的url</span></span><br><span class="line">SPLASH_URL = <span class="string">&#x27;http://127.0.0.1:8050&#x27;</span></span><br><span class="line"><span class="comment"># 下载器中间件</span></span><br><span class="line">DOWNLOADER_MIDDLEWARES = &#123;</span><br><span class="line">    <span class="string">&#x27;scrapy_splash.SplashCookiesMiddleware&#x27;</span>: <span class="number">723</span>,</span><br><span class="line">    <span class="string">&#x27;scrapy_splash.SplashMiddleware&#x27;</span>: <span class="number">725</span>,</span><br><span class="line">    <span class="string">&#x27;scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware&#x27;</span>: <span class="number">810</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 去重过滤器</span></span><br><span class="line">DUPEFILTER_CLASS = <span class="string">&#x27;scrapy_splash.SplashAwareDupeFilter&#x27;</span></span><br><span class="line"><span class="comment"># 使用Splash的Http缓存</span></span><br><span class="line">HTTPCACHE_STORAGE = <span class="string">&#x27;scrapy_splash.SplashAwareFSCacheStorage&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Obey robots.txt rules</span></span><br><span class="line">ROBOTSTXT_OBEY = <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+<p>然后再编写代码爬取网页（以百度知道为例）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">from</span> scrapy_splash <span class="keyword">import</span> SplashRequest <span class="comment"># 使用scrapy_splash包提供的request对象</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">WithSplashSpider</span>(scrapy.Spider):</span><br><span class="line">    name = <span class="string">&#x27;with_splash&#x27;</span></span><br><span class="line">    allowed_domains = [<span class="string">&#x27;baidu.com&#x27;</span>]</span><br><span class="line">    start_urls = [<span class="string">&#x27;https://www.baidu.com/s?wd=13161933309&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">start_requests</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">yield</span> SplashRequest(self.start_urls[<span class="number">0</span>],</span><br><span class="line">                            callback=self.parse_splash,</span><br><span class="line">                            args=&#123;<span class="string">&#x27;wait&#x27;</span>: <span class="number">10</span>&#125;, <span class="comment"># 最大超时时间，单位：秒</span></span><br><span class="line">                            endpoint=<span class="string">&#x27;render.html&#x27;</span>) <span class="comment"># 使用splash服务的固定参数</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse_splash</span>(<span class="params">self, response</span>):</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;with_splash.html&#x27;</span>, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(response.body.decode())</span><br></pre></td></tr></table></figure>
+<h2 id="存入数据库"><a class="header-anchor" href="#存入数据库"> </a>存入数据库</h2>
+<p>我们在爬取到数据之后，有些时候需要将其存储到数据库中</p>
+<h3 id="SQLite"><a class="header-anchor" href="#SQLite"> </a>SQLite</h3>
+<p>SQLite是一个轻量级数据库，在数据量很小的情况下，它的处理速度很快，使用它足够了</p>
+<blockquote>
+<p>SQLite数据库的文件创建和表创建在此不做赘述</p>
+</blockquote>
+<p>在Python中，可以使用Python标准库的<code>sqlite3</code>模块去访问SQLite数据库</p>
+<p>在配置文件<code>settings.py</code>时，我们需要指定所要使用的SQLite数据库，并<strong>启用和SQLite相关的Pipeline</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SQLITE_DB_NAME = <span class="string">&#x27;scrapy.db&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="MySQL"><a class="header-anchor" href="#MySQL"> </a>MySQL</h3>
+<p>MySQL的应用极其广泛，它是开源免费的，可以支持大型数据库，是个人用户和中小企业的技术首选</p>
+<p>此次仍然不赘述MySQL数据库的创建和表的创建</p>
+<p>Python可以使用<code>mysqlclient</code>模块访问MySQL数据库</p>
+<p>在配置文件<code>settings.py</code>时，我们需要指定所要使用的MySQL数据库，并<strong>启用和MySQL相关的Pipeline</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MYSQL_DB_NAME = <span class="string">&#x27;scrapy_db&#x27;</span></span><br><span class="line">MYSQL_HOST = <span class="string">&#x27;localhost&#x27;</span></span><br><span class="line">MYSQL_USER = <span class="string">&#x27;Edwards&#x27;</span></span><br><span class="line">MYSQL_PASSWORD = <span class="string">&#x27;12345678&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="MongoDB"><a class="header-anchor" href="#MongoDB"> </a>MongoDB</h3>
+<p>MongoDB是一个面向文档的非关系型数据库，近年来得到了广泛应用</p>
+<p>Python可以使用<code>pymongo</code>模块访问MongoDB数据库</p>
+<p>在配置文件<code>settings.py</code>时，我们需要指定所要使用的MongoDB数据库，并<strong>启用和MongoDB相关的Pipeline</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MONGODB_URL = <span class="string">&#x27;mongodb://localhost:27017&#x27;</span></span><br><span class="line">MONGODB_DB_NAME = <span class="string">&#x27;scrapy_db&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Redis"><a class="header-anchor" href="#Redis"> </a>Redis</h3>
+<p>Redis是一个使用ANSI C编写的高性能Key-Value数据库，使用内存作为主存储</p>
+<p>在Python中可以使用<code>redis-py</code>访问Redis数据库</p>
+<p>在配置文件<code>settings.py</code>时，我们需要指定所要使用的Redis数据库，并<strong>启用和Redis相关的Pipeline</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">REDIS_HOST = <span class="string">&#x27;localhost&#x27;</span></span><br><span class="line">REDIS_PORT = <span class="number">6379</span></span><br><span class="line">REDIS_DB_INDEX = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用HTTP代理"><a class="header-anchor" href="#使用HTTP代理"> </a>使用HTTP代理</h2>
+<p>HTTP的代理服务器可以比作客户端和服务器之间的一个信息中转站，客户端发送的HTTP请求和Web返回的HTTP响应通过代理服务器转发给对方</p>
+<h3 id="HttpProxyMiddleWare"><a class="header-anchor" href="#HttpProxyMiddleWare"> </a>HttpProxyMiddleWare</h3>
+<p>Scrapy内部提供了一个下载的中间件<code>HttpProxyMiddleWare</code>，专门用于给Scrapy爬虫设置代理</p>
+<p>默认情况下，<code>HttpProxyMiddleWare</code>是启用的，它会在系统的环境变量中搜索当前的系统代理（名字格式为xxx_proxy的环境变量）作为Scrapy爬虫所使用的代理</p>
+<h4 id="多个代理"><a class="header-anchor" href="#多个代理"> </a>多个代理</h4>
+<p>当利用<code>HttpProxyMiddleWare</code>进行代理的时候，对于一种协议（HTTP或HTTPS）的所有请求只能使用一个代理，如果想使用多个代理，可以在构造每一个<code>Request</code>对象时，通过<code>meta</code>参数的<code>proxy</code>字段手动设置</p>
+<h4 id="随机代理"><a class="header-anchor" href="#随机代理"> </a>随机代理</h4>
+<p>某些网站为了反爬虫，经常会监测IP的访问量，如果同一IP在短时间内大量访问的话，服务器会将其封禁</p>
+<p>爬虫可以使用多个代理对此类网站进行爬取，此时的访问量会被多个代理所分摊，从而避免封禁IP</p>
+<p>我们只需要在<code>middlewares.py</code>中实现随机使用代理的算法即可</p>
+<h2 id="分布式爬虫"><a class="header-anchor" href="#分布式爬虫"> </a>分布式爬虫</h2>
+<p>由于受到计算能力和网络带宽的限制，单个计算机上运行的爬虫在爬取的数据量较大的情况下，需要耗费较多的时间</p>
+<p><code>scrapy-redis</code>库为Scrapy拓展了分布式爬取的功能，可以让网络中的多台计算机上同时运行爬虫程序</p>
 </article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://edwardssss.github.io">砕月之殇</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://edwardssss.github.io/posts/21153/">https://edwardssss.github.io/posts/21153/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://edwardssss.github.io" target="_blank">砕月之殇的摆烂小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/%E7%88%AC%E8%99%AB/">爬虫</a></div><div class="post_share"><div class="social-share" data-image="/user/show_myself.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/40558/" title="NLP入门"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">NLP入门</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/user/show_myself.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">砕月之殇</div><div class="author-info__description">个人博客站(也是灌水吐槽站)</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Edwardssss"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Edwardssss" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ed_129@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://edwardssss.github.io/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><b><font color="#e66b6d">双</font> <font color="#e66d98">手</font> <font color="#e66cc6">合</font> <font color="#cc6de6">十</font> <font color="#9770e6">成</font> <font color="#6d93e6">为</font> <font color="#6fcde6">自</font> <font color="#72e6b6">己</font> <font color="#72e689">的</font> <font color="#99e670">神</font> <br /><font color="#cde670">自</font> <font color="#e6df72">己</font> <font color="#e6c073">所</font> <font color="#e6a271">信</font> <font color="#e6796f">念</font> <font color="#e65454">的</font> <font color="#e63333">即</font> <font color="#e62c2c">是</font> <font color="#e60101">信</font> <font color="#e60101">仰</font></b> <a href="https://smms.app/image/1WNzyQaDAJPSt2I" target="_blank"><img src="https://s2.loli.net/2023/03/12/1WNzyQaDAJPSt2I.png" width=200 /></a></div><div class="xpand" style="height:0px;"></div></div><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople1.js"></script><script src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/zdog.dist.js"></script><script id="rendered-js" src="https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople.js"></script><style>.card-widget.card-announcement {
 margin: 0;
 align-items: center;
@@ -187,7 +897,7 @@ canvas {
 display: block;
 margin: 0 auto;
 cursor: move;
-}</style><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Scrapy%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">1.</span> <span class="toc-text">Scrapy环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Scrapy%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.</span> <span class="toc-text">Scrapy模块安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99Scrapy%E7%88%AC%E8%99%AB"><span class="toc-number">1.2.</span> <span class="toc-text">编写Scrapy爬虫</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scrapy%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">Scrapy框架结构及其工作原理</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('/user/bg.jpg')"><div id="footer-wrap"><div class="footer_custom_text">现在是，摆烂时间(开摆)</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>function loadWaline () {
+}</style><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Scrapy%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">Scrapy初步认识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Scrapy%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.</span> <span class="toc-text">Scrapy模块安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99Scrapy%E7%88%AC%E8%99%AB"><span class="toc-number">1.2.</span> <span class="toc-text">编写Scrapy爬虫</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scrapy%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">Scrapy框架结构及其工作原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Request%E5%92%8CResponse%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.2.</span> <span class="toc-text">Request和Response对象</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Request%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">Request对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Response%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">Response对象</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Spider%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B"><span class="toc-number">1.2.3.</span> <span class="toc-text">Spider开发流程</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Selector%E6%8F%90%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="toc-number">2.</span> <span class="toc-text">使用Selector提取数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Selector%E5%AF%B9%E8%B1%A1"><span class="toc-number">2.1.</span> <span class="toc-text">Selector对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">2.1.1.</span> <span class="toc-text">创建对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E4%B8%AD%E6%95%B0%E6%8D%AE"><span class="toc-number">2.1.2.</span> <span class="toc-text">选中数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="toc-number">2.1.3.</span> <span class="toc-text">提取数据</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Response%E5%86%85%E7%BD%AESelector"><span class="toc-number">2.2.</span> <span class="toc-text">Response内置Selector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Xpath"><span class="toc-number">2.3.</span> <span class="toc-text">Xpath</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">2.3.1.</span> <span class="toc-text">基础语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">2.3.2.</span> <span class="toc-text">常用函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">2.4.</span> <span class="toc-text">CSS选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-v2"><span class="toc-number">2.4.1.</span> <span class="toc-text">基础语法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Item%E5%B0%81%E8%A3%85%E6%95%B0%E6%8D%AE"><span class="toc-number">3.</span> <span class="toc-text">使用Item封装数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Item%E5%92%8CField"><span class="toc-number">3.1.</span> <span class="toc-text">Item和Field</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%93%E5%B1%95Item%E5%AD%90%E7%B1%BB"><span class="toc-number">3.2.</span> <span class="toc-text">拓展Item子类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Item-Pipeline%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE"><span class="toc-number">4.</span> <span class="toc-text">使用Item Pipeline处理数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Item-Pipeline"><span class="toc-number">4.1.</span> <span class="toc-text">Item Pipeline</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8LinkExtractor%E6%8F%90%E5%8F%96%E9%93%BE%E6%8E%A5"><span class="toc-number">5.</span> <span class="toc-text">使用LinkExtractor提取链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8LinkExtractor"><span class="toc-number">5.1.</span> <span class="toc-text">使用LinkExtractor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%8F%E8%BF%B0%E6%8F%90%E5%8F%96%E8%A7%84%E5%88%99"><span class="toc-number">5.2.</span> <span class="toc-text">描述提取规则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Exporter%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE"><span class="toc-number">6.</span> <span class="toc-text">使用Exporter导出数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE"><span class="toc-number">6.1.</span> <span class="toc-text">指定导出数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%92%8C%E5%9B%BE%E7%89%87"><span class="toc-number">7.</span> <span class="toc-text">下载文件和图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#FilesPipeline%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">7.1.</span> <span class="toc-text">FilesPipeline的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ImagesPipeline%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">7.2.</span> <span class="toc-text">ImagesPipeline的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95"><span class="toc-number">8.</span> <span class="toc-text">模拟登录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Scrapy%E7%9A%84%E7%99%BB%E5%BD%95%E6%A8%A1%E5%9D%97"><span class="toc-number">8.1.</span> <span class="toc-text">Scrapy的登录模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%86%E5%88%AB%E9%AA%8C%E8%AF%81%E7%A0%81"><span class="toc-number">8.2.</span> <span class="toc-text">识别验证码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cookie%E7%99%BB%E5%BD%95"><span class="toc-number">8.3.</span> <span class="toc-text">Cookie登录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AC%E5%8F%96%E5%8A%A8%E6%80%81%E9%A1%B5%E9%9D%A2"><span class="toc-number">9.</span> <span class="toc-text">爬取动态页面</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Splash%E6%B8%B2%E6%9F%93%E5%BC%95%E6%93%8E"><span class="toc-number">9.1.</span> <span class="toc-text">Splash渲染引擎</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#render-html%E7%AB%AF%E7%82%B9"><span class="toc-number">9.1.1.</span> <span class="toc-text">render.html端点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#execute%E7%AB%AF%E7%82%B9"><span class="toc-number">9.1.2.</span> <span class="toc-text">execute端点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8Scrapy%E4%B8%AD%E4%BD%BF%E7%94%A8Splash"><span class="toc-number">9.1.3.</span> <span class="toc-text">在Scrapy中使用Splash</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">10.</span> <span class="toc-text">存入数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLite"><span class="toc-number">10.1.</span> <span class="toc-text">SQLite</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL"><span class="toc-number">10.2.</span> <span class="toc-text">MySQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MongoDB"><span class="toc-number">10.3.</span> <span class="toc-text">MongoDB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Redis"><span class="toc-number">10.4.</span> <span class="toc-text">Redis</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8HTTP%E4%BB%A3%E7%90%86"><span class="toc-number">11.</span> <span class="toc-text">使用HTTP代理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HttpProxyMiddleWare"><span class="toc-number">11.1.</span> <span class="toc-text">HttpProxyMiddleWare</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E4%B8%AA%E4%BB%A3%E7%90%86"><span class="toc-number">11.1.1.</span> <span class="toc-text">多个代理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E4%BB%A3%E7%90%86"><span class="toc-number">11.1.2.</span> <span class="toc-text">随机代理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB"><span class="toc-number">12.</span> <span class="toc-text">分布式爬虫</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('/user/bg.jpg')"><div id="footer-wrap"><div class="footer_custom_text">现在是，摆烂时间(开摆)</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>function loadWaline () {
   function initWaline () {
     const waline = Waline.init(Object.assign({
       el: '#waline-wrap',
