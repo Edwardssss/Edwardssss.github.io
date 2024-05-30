@@ -329,13 +329,6 @@
   </url>
   
   <url>
-    <loc>https://edwardssss.github.io/tags/%E5%88%B7%E6%9C%BA-adb/</loc>
-    <lastmod>2024-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://edwardssss.github.io/tags/NLP/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -351,6 +344,13 @@
   
   <url>
     <loc>https://edwardssss.github.io/tags/DSP/</loc>
+    <lastmod>2024-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://edwardssss.github.io/tags/%E5%88%B7%E6%9C%BA-adb/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -420,14 +420,14 @@
   </url>
   
   <url>
-    <loc>https://edwardssss.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://edwardssss.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://edwardssss.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</loc>
+    <loc>https://edwardssss.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -478,14 +478,14 @@
   </url>
   
   <url>
-    <loc>https://edwardssss.github.io/categories/%E5%88%B7%E6%9C%BA-Android/</loc>
+    <loc>https://edwardssss.github.io/categories/DSP/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://edwardssss.github.io/categories/DSP/</loc>
+    <loc>https://edwardssss.github.io/categories/%E5%88%B7%E6%9C%BA-Android/</loc>
     <lastmod>2024-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
